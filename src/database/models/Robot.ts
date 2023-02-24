@@ -2,12 +2,12 @@ import { model, Schema } from "mongoose";
 
 export const robotSchema = new Schema({
   name: String,
-  url: String,
+  image: String,
   stats: {
     speed: Number,
     endurance: Number,
-    creationDate: Date,
   },
+  creationDate: Date,
 });
 
-export const Robot = model("Robot", robotSchema, "robots");
+export const Robot = model("Robot", robotSchema, "alexander-robots");
